@@ -1,0 +1,312 @@
+/**
+ * Copyright (c) 2023, WSO2 LLC. (https://www.wso2.com). 
+ *
+ * WSO2 LLC. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+.App {
+    text-align: center;
+}
+  
+.App h1 {
+    font-weight: 600;
+    font-size: xx-large;
+}
+  
+.description {
+    font-size: medium;
+}
+  
+.AppHeaderSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    padding: 75px;
+}
+  
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+  
+.headerContainer {
+    display: inline-block;
+    margin-top: 25px;
+  }
+  
+.containerColumn {
+    align-items: center;
+    font-size: 18px;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+}
+  
+  .containerColumn a {
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+  }
+
+.buttonContainer {
+    display: grid;
+    margin-top: 50px;
+    place-content: center;
+}
+  
+.btn {
+    width: 120px;
+    border-radius: 500rem; 
+}
+  
+.asgardeoLogoImage {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+  
+.nextLogoImageLogo {
+    margin-top: 10px;
+}
+  
+.linkLogoImageSmall {
+    padding: 10px;
+}
+  
+/* Home Section */
+  
+.mainDiv {
+    display: grid;
+}
+  
+.grid {
+    display: flex;
+    grid-template-columns: repeat(3, minmax(33%, auto));
+    width: var(--max-width);
+    max-width: 1260px;
+    place-content: center;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.gridView {  
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    place-content: center;
+    
+}
+
+.gridView p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+  
+.card {
+    float: left;
+    padding: 10px;
+    width: 30%;
+    margin-left: 1%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+  
+.card strong {
+    font-size: small;
+}
+  
+.card p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.card a {
+    text-decoration: none;
+    color: #FF7300;
+    font-size: 0.8rem;
+}
+  
+.getStartedSectionComponentGetStartedTextDiv {
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    margin-top: 3%;
+}
+  
+.getStartedSectionComponentGetStartedTextP {
+    text-align: center ;
+    font-size: medium;
+    max-width: 800px;
+}
+
+.mainPanelDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 5.5rem 4rem;
+}
+
+.tableMainPanelDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+}
+
+.addBtn{
+    border-radius: 50px;
+    margin-right: 70px;
+}
+
+.profilesection{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.addUserMainDiv {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    border-radius: 5px;
+}
+
+.list {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.idp__template__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.idp__template__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: whitesmoke 1px solid;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+.idp__template__card:hover {
+    background-color: rgba(245, 245, 245, 0.2);
+    transition: background-color 10ms linear;
+    cursor: pointer;
+}
+
+.addLoginFlowBtn{
+    width: 25%;
+    border-radius: 50px;
+}
+
+.errorMainContent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.p {
+    text-align: center;
+}
+  
+.footer {
+    background: #F7F8FB;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    padding: 7px;
+}
+  
+.footer a {
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+}
+  
+.footer p {
+    font-size: small;
+    justify-content: center;
+    display: flex;
+}
+  
+.navDiv {
+    width: 100%;
+    z-index: 100;
+}
+  
+.navBar {
+    padding-left: 40px;
+    width: 100%;
+    position: fixed;
+}
+  
+.navItem {
+    align-items: center;
+    position:relative; 
+    float: left;
+    border-radius: 5px;
+    padding: 0px;
+}
+  
+.formButton {
+    width: 25%;
+    border-radius: 50px;
+}
+  
+.signout a {
+    text-decoration: none;
+}
+  
+.b {
+    font-weight: 100;
+}
+
+.contentToCopy {
+    background-color: #F5F5F8;
+    padding: 20px;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    width: 100%;
+    min-height: 100px;
+    text-align: left;
+    border-radius: 8px;
+}
