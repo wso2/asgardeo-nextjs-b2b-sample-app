@@ -16,7 +16,7 @@
  * under the License.
  */
 
-import AccordianItemHeaderComponent from "../../../../common/AccordianItemHeader/AccordianItemHeader";
+import AccordionItemHeaderComponent from "../../../../common/AccordianItemHeader/AccordianItemHeader";
 import { Session } from "next-auth";
 import React, { useCallback, useEffect, useState } from "react";
 import { Nav, Panel, Stack } from "rsuite";
@@ -112,7 +112,7 @@ export default function IdentityProviderDetails(
   return idpDetails ? (
     <Panel
       header={
-        <AccordianItemHeaderComponent
+        <AccordionItemHeaderComponent
           imageSrc={getImageForTheIdentityProvider(idpDetails.templateId)}
           title={idpDetails.name}
           description={idpDetails.description}
@@ -153,8 +153,8 @@ interface IdentityProviderDetailsNavProps {
  *
  * @returns navigation component of idp details
  */
-function IdentityProviderDetailsNav(prop: IdentityProviderDetailsNavProps) {
-  const { idpDetails, activeKeyNav, activeKeyNavSelect } = prop;
+function IdentityProviderDetailsNav(props: IdentityProviderDetailsNavProps) {
+  const { idpDetails, activeKeyNav, activeKeyNavSelect } = props;
 
   const templateIdCheck = (): boolean => {
     const selectedTemplate = selectedTemplateBaesedonTemplateId(

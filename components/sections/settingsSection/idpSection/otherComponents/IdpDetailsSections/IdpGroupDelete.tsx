@@ -43,8 +43,8 @@ interface IdpGroupDeleteProps {
  *
  * @returns Modal form to delete the group
  */
-export default function IdpGroupDelete(prop: IdpGroupDeleteProps) {
-  const { session, id, open, onClose, groups, getGroups } = prop;
+export default function IdpGroupDelete(props: IdpGroupDeleteProps) {
+  const { session, id, open, onClose, groups, getGroups } = props;
   const toaster = useToaster();
 
   const onGroupDelete = (

@@ -164,38 +164,36 @@ export default function IdpSection() {
           ) : null}
         </Stack>
 
-        {idpList ? (
-          idpList.length === 0 ? (
-            <Stack
-              alignItems="center"
-              direction="column"
-              style={{ marginTop: "30px" }}
-            >
-              <AppSelectIcon
-                style={{ opacity: 0.2 }}
-                width="150px"
-                height="150px"
-              />
-              <p style={{ fontSize: 14, marginTop: "20px" }}>
-                There are no connections available at the moment.
-              </p>
-              <Button
-                appearance="primary"
-                onClick={onAddIdentityProviderClick}
-                size="md"
-                style={{ marginTop: "12px", borderRadius: "50px" }}
-              >
-                Create Connection
-              </Button>
-            </Stack>
-          ) : (
-            <IdentityProviderList
-              fetchAllIdPs={fetchAllIdPs}
-              idpList={idpList}
-              session={session!}
+        {idpList?.length === 0 ? (
+          <Stack
+            alignItems="center"
+            direction="column"
+            style={{ marginTop: "30px" }}
+          >
+            <AppSelectIcon
+              style={{ opacity: 0.2 }}
+              width="150px"
+              height="150px"
             />
-          )
-        ) : null}
+            <p style={{ fontSize: 14, marginTop: "20px" }}>
+              There are no connections available at the moment.
+            </p>
+            <Button
+              appearance="primary"
+              onClick={onAddIdentityProviderClick}
+              size="md"
+              style={{ marginTop: "12px", borderRadius: "50px" }}
+            >
+              Create Connection
+            </Button>
+          </Stack>
+        ) : (
+          <IdentityProviderList
+            fetchAllIdPs={fetchAllIdPs}
+            idpList={idpList}
+            session={session!}
+          />
+        )}
 
         {openSelectModal && (
           <SelectIdentityProvider

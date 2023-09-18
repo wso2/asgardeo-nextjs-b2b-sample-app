@@ -39,9 +39,9 @@ interface SelectIdentityProviderProps {
  * @returns A modal to select idp's
  */
 export default function SelectIdentityProvider(
-  prop: SelectIdentityProviderProps
+  props: SelectIdentityProviderProps
 ) {
-  const { openModal, onClose, templates, onTemplateSelected } = prop;
+  const { openModal, onClose, templates, onTemplateSelected } = props;
 
   return (
     <Modal open={openModal} onClose={onClose} onBackdropClick={onClose}>

@@ -46,8 +46,8 @@ interface DeleteUserProps {
  *
  * @returns Modal form to delete the group
  */
-export default function DeleteUser(prop: DeleteUserProps) {
-  const { session, user, open, onClose } = prop;
+export default function DeleteUser(props: DeleteUserProps) {
+  const { session, user, open, onClose } = props;
   const toaster = useToaster();
   const [loadingDisplay, setLoadingDisplay] = useState(LOADING_DISPLAY_NONE);
 

@@ -51,9 +51,9 @@ interface DeleteGroupMappingComponentProps {
  * @returns Modal form to delete the group
  */
 export default function DeleteGroupMappingComponent(
-  prop: DeleteGroupMappingComponentProps
+  props: DeleteGroupMappingComponentProps
 ) {
-  const { session, open, onClose, roleName, group, getGroups } = prop;
+  const { session, open, onClose, roleName, group, getGroups } = props;
   const [loadingDisplay, setLoadingDisplay] = useState(LOADING_DISPLAY_NONE);
   const toaster = useToaster();
 

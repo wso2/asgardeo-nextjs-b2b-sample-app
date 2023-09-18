@@ -16,7 +16,7 @@
  * under the License.
  */
 
-import AccordianItemHeaderComponent from "../../../../../common/AccordianItemHeader/AccordianItemHeader";
+import AccordionItemHeaderComponent from "../../../../../common/AccordianItemHeader/AccordianItemHeader";
 import { Session } from "next-auth";
 import { useState } from "react";
 import { Button, List, Nav, Panel, Popover, Stack, Whisper } from "rsuite";
@@ -86,7 +86,7 @@ export default function RoleItem(props: RoleItemProps) {
   return role ? (
     <Panel
       header={
-        <AccordianItemHeaderComponent
+        <AccordionItemHeaderComponent
           title={role.name}
           description={`Application role ${role.name} details`}
         />

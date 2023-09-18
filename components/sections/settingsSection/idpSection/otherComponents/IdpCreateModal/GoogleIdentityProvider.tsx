@@ -46,9 +46,9 @@ interface GoogleIdentityProviderProps {
  * @returns Form to create google idp
  */
 export default function GoogleIdentityProvider(
-  prop: GoogleIdentityProviderProps
+  props: GoogleIdentityProviderProps
 ) {
-  const { session, template, onIdpCreate, onCancel } = prop;
+  const { session, template, onIdpCreate, onCancel } = props;
 
   const validate = (values: Record<string, string>): Record<string, string> => {
     let errors: Record<string, string> = {};

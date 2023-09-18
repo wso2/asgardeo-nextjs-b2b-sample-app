@@ -33,8 +33,8 @@ export interface NavBarProps {
   activeKeyNavSelect: (event: string | undefined) => void;
 }
 
-function NavBar(prop: NavBarProps) {
-  const { activeKeyNav, activeKeyNavSelect } = prop;
+function NavBar(props: NavBarProps) {
+  const { activeKeyNav, activeKeyNavSelect } = props;
   const { data: session, status } = useSession();
   const NavConfigList: navList = NavData;
   const router = useRouter();
@@ -59,7 +59,12 @@ function NavBar(prop: NavBarProps) {
     }
   };
 
-  // Function to find an item by eventKey in the items array
+  /**
+   *
+   * @param prop - items (items array), eventkey
+   *
+   * @returns An item corresponding to given eventKey in the items array.
+   */
   const findItemByEventKey = (items: any[], eventKey: string): any => {
     for (const item of items) {
       if (item.eventKey === eventKey) {
@@ -76,7 +81,12 @@ function NavBar(prop: NavBarProps) {
     return null;
   };
 
-  // Function to construct the full route based on the selectedItem and session data
+  /**
+   *
+   * @param prop - selectedItem, session
+   *
+   * @returns The full route based on the selectedItem and session data.
+   */
   const getFullRoute = (selectedItem: any, session: any) => {
     return `/o/${session.orgId}/${selectedItem.route}`;
   };

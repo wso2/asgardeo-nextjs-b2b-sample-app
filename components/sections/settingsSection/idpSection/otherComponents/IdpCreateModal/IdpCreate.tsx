@@ -61,8 +61,8 @@ interface IdpCreateProps {
  * @param prop - `IdpCreateProps`
  * @returns Idp creation modal
  */
-export default function IdpCreate(prop: IdpCreateProps) {
-  const { session, openModal, onIdpCreate, onCancel, template, orgId } = prop;
+export default function IdpCreate(props: IdpCreateProps) {
+  const { session, openModal, onIdpCreate, onCancel, template, orgId } = props;
 
   const handleModalClose = (): void => {
     onCancel();
@@ -121,8 +121,8 @@ export default function IdpCreate(prop: IdpCreateProps) {
   );
 }
 
-function Prerequisite(prop: PrerequisiteProps) {
-  const { orgId } = prop;
+function Prerequisite(props: PrerequisiteProps) {
+  const { orgId } = props;
 
   const toaster = useToaster();
 

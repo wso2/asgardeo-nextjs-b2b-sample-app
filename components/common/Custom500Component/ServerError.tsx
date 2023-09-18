@@ -25,8 +25,8 @@ export interface Custom500ComponentProps {
   goBack: MouseEventHandler<HTMLElement>;
 }
 
-function ServerError(prop: Custom500ComponentProps) {
-  const { goBack } = prop;
+function ServerError(props: Custom500ComponentProps) {
+  const { goBack } = props;
 
   return (
     <Stack

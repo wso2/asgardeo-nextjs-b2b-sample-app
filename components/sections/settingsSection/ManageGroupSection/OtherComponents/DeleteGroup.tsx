@@ -46,8 +46,8 @@ interface DeleteGroupProps {
  *
  * @returns Modal form to delete the group
  */
-export default function DeleteGroup(prop: DeleteGroupProps) {
-  const { session, open, onClose, group } = prop;
+export default function DeleteGroup(props: DeleteGroupProps) {
+  const { session, open, onClose, group } = props;
   const toaster = useToaster();
   const [loadingDisplay, setLoadingDisplay] = useState(LOADING_DISPLAY_NONE);
 

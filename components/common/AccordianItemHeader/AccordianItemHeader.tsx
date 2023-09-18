@@ -20,7 +20,7 @@ import { random_rgba } from "../../../utils/util-common/common";
 import Image from "next/image";
 import { Avatar, Stack } from "rsuite";
 
-interface AccordianItemHeaderProps {
+interface AccordionItemHeaderProps {
   title: string;
   description: string;
   imageSrc?: string;
@@ -30,10 +30,10 @@ interface AccordianItemHeaderProps {
  *
  * @param prop - `title`, `description`, `imageSrc`
  *
- * @returns header componet for items in an accordian
+ * @returns header componet for items in an Accordion
  */
-function AccordianItemHeader(prop: AccordianItemHeaderProps) {
-  const { title, description, imageSrc } = prop;
+function AccordionItemHeader(props: AccordionItemHeaderProps) {
+  const { title, description, imageSrc } = props;
 
   return (
     <Stack>
@@ -67,4 +67,4 @@ function AccordianItemHeader(prop: AccordianItemHeaderProps) {
   );
 }
 
-export default AccordianItemHeader;
+export default AccordionItemHeader;

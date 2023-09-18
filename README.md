@@ -151,9 +151,6 @@ SHARED_APP_CLIENT_SECRET="<CLIENT SECRET OF CREATED APP>"
 # The name of the Asgardeo Shared Application
 SHARED_APPICATION_NAME="Guardio-App"
 
-# Scopes
-API_SCOPES="openid email profile internal_login internal_user_mgt_view internal_user_mgt_list internal_user_mgt_update internal_user_mgt_delete internal_user_mgt_create internal_idp_view internal_idp_create internal_idp_update internal_idp_delete internal_application_mgt_view internal_application_mgt_update internal_application_mgt_create internal_application_mgt_delete internal_organization_view internal_role_mgt_view internal_role_mgt_create internal_role_mgt_update internal_role_mgt_delete internal_group_mgt_update internal_group_mgt_view internal_group_mgt_create internal_group_mgt_delete internal_governance_view internal_governance_update"
-
 ```
 
 5. Start the development server.
@@ -167,8 +164,9 @@ Login from the created user `Alex` to the application.
 
 - Type `Best Car Mart` when pop up to type the organization.
 
-## Deploy on Vercel
+## Deploy the application
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Go through the following guides and deploy your application in Vercel, Netlify and Choreo.
+Vercel : https://vercel.com/guides/deploying-react-with-vercel
+Netlify : https://www.netlify.com/with/nextjs/
+Choreo : https://wso2.com/choreo/docs/quick-start-guides/build-your-first-cloud-native-application-with-choreo/

@@ -31,8 +31,8 @@ interface DialogComponentProps {
  *
  * @returns A side dialog to show notifications
  */
-function DialogComponent(prop: DialogComponentProps) {
-  const { type, header, body } = prop;
+function DialogComponent(props: DialogComponentProps) {
+  const { type, header, body } = props;
 
   return (
     <Notification type={type} header={header} closable>

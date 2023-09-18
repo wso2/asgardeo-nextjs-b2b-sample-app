@@ -50,9 +50,9 @@ interface ExternalIdentityProviderProps {
  * @returns Form to create external idp
  */
 export default function ExternalIdentityProvider(
-  prop: ExternalIdentityProviderProps
+  props: ExternalIdentityProviderProps
 ) {
-  const { session, template, onIdpCreate, onCancel } = prop;
+  const { session, template, onIdpCreate, onCancel } = props;
 
   const [configureType, setConfigureType] =
     useState<IdentityProviderConfigureType>(IdentityProviderConfigureType.AUTO);

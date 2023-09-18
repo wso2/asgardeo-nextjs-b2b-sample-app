@@ -54,8 +54,8 @@ interface EditUserComponentProps {
  *
  * @returns Modal form to edit the user
  */
-export default function EditUserComponent(prop: EditUserComponentProps) {
-  const { session, user, open, onClose } = prop;
+export default function EditUserComponent(props: EditUserComponentProps) {
+  const { session, user, open, onClose } = props;
 
   const toaster = useToaster();
   const [loadingDisplay, setLoadingDisplay] = useState(LOADING_DISPLAY_NONE);

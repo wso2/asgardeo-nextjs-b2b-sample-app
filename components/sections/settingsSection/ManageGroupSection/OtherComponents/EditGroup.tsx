@@ -63,8 +63,8 @@ interface EditGroupComponentProps {
  *
  * @returns Modal form to edit the group
  */
-export default function EditGroupComponent(prop: EditGroupComponentProps) {
-  const { session, group, open, onClose, userList } = prop;
+export default function EditGroupComponent(props: EditGroupComponentProps) {
+  const { session, group, open, onClose, userList } = props;
 
   const toaster = useToaster();
 

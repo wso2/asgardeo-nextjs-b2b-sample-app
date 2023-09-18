@@ -23,7 +23,7 @@ import {
   IdentityProvider,
   IdentityProviderGroupInterface,
 } from "../../../../../../../models/identityProvider/identityProvider";
-import AccordianItemHeaderComponent from "../../../../../../common/AccordianItemHeader/AccordianItemHeader";
+import AccordionItemHeaderComponent from "../../../../../../common/AccordianItemHeader/AccordianItemHeader";
 import { useCallback, useEffect, useState } from "react";
 import RequestMethod from "../../../../../../../models/api/requestMethod";
 import { Form } from "react-final-form";
@@ -241,7 +241,7 @@ export default function AuthenticatorGroup(props: AuthenticatorGroupProps) {
   return authenticator ? (
     <Panel
       header={
-        <AccordianItemHeaderComponent
+        <AccordionItemHeaderComponent
           title={authenticator.displayName}
           description={""}
         />
